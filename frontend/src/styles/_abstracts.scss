@@ -1,0 +1,44 @@
+//  .o88b.  .d88b.  db       .d88b.  d8888b. .d8888.
+// d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP
+// 8P      88    88 88      88    88 88oobY' `8bo.
+// 8b      88    88 88      88    88 88`8b     `Y8b.
+// Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
+//  `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y'
+//
+//
+:root {
+  --color--light-shades: #f3f3eb;
+  --color--light-accent: #97adcc;
+  --color--main-brand: #447be4;
+  --color--dark-accent: #7b7077;
+  --color--dark-shades: #23314d;
+
+  --color--success: #4aa07d;
+  --color--warning: #c89045;
+  --color--danger: #f44336;
+}
+
+// .d8888. db   db  .d8b.  d8888b.  .d88b.  db   d8b   db .d8888.
+// 88'  YP 88   88 d8' `8b 88  `8D .8P  Y8. 88   I8I   88 88'  YP
+// `8bo.   88ooo88 88ooo88 88   88 88    88 88   I8I   88 `8bo.
+//   `Y8b. 88~~~88 88~~~88 88   88 88    88 Y8   I8I   88   `Y8b.
+// db   8D 88   88 88   88 88  .8D `8b  d8' `8b d8'8b d8' db   8D
+// `8888Y' YP   YP YP   YP Y8888D'  `Y88P'   `8b8' `8d8'  `8888Y'
+//
+//
+:root{
+  --shadow--dark-full: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow--dark-up: 0 -2rem 4rem rgba(0, 0, 0, 0.3);
+  --shadow--dark-down: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+// d88888b  .d88b.  d8b   db d888888b .d8888.
+// 88'     .8P  Y8. 888o  88 `~~88~~' 88'  YP
+// 88ooo   88    88 88V8o 88    88    `8bo.
+// 88~~~   88    88 88 V8o88    88      `Y8b.
+// 88      `8b  d8' 88  V888    88    db   8D
+// YP       `Y88P'  VP   V8P    YP    `8888Y'
+//
+//
+$font-main: 'Open Sans', sans-serif;
+$font-title: 'Vibur', cursive;

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: var(--color--main-brand);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-main;
+  font-weight: 400;
+  line-height: 1.6;
+
+  background: linear-gradient(to right bottom, var(--color--main-brand), var(--color--danger));
+}

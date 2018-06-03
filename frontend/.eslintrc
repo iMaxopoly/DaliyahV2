@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-console": "off"
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ]
+}

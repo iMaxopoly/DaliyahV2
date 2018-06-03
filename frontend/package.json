@@ -1,0 +1,49 @@
+{
+  "name": "daliyah-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Manish Prakash Singh <contact@kryptodev.com> (https://kryptodev.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config config/webpack.prod.js",
+    "start": "webpack-dev-server --config config/webpack.dev.js"
+  },
+  "browserslist": [
+    "last 5 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "brotli-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "prettier": "^1.13.4",
+    "sass-loader": "^7.0.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.10.2",
+    "webpack-cli": "2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}

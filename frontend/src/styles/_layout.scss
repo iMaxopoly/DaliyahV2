@@ -1,0 +1,125 @@
+.container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 3rem auto;
+  border-radius: .5rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 100%;
+    margin: 0;
+    border-radius: initial;
+  }
+
+  background-color: var(--color--dark-shades);
+  color: var(--color--light-shades);
+  box-shadow: var(--shadow--dark-full);
+
+  display: grid;
+  grid-template-rows: minmax(7rem, auto) 1fr 5rem;
+  grid-template-columns: 1fr;
+}
+
+/*
+* Section Header
+*/
+.header {
+  grid-column: 1/-1;
+  min-height: 100%;
+  background-color: var(--color--main-brand);
+  //box-shadow: var(--shadow--dark-down);
+}
+
+.navigation {
+  height: 100%;
+  text-transform: uppercase;
+  cursor: default;
+
+  &__container {
+    height: inherit;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+
+    &--logo {
+      display: flex;
+      font-family: $font-title;
+      font-size: 3rem;
+      text-transform: none;
+      padding: 1rem;
+      transition: all 0.2s ease-in-out;
+
+      @media only screen and (max-width: 424px) {
+        grid-column: 1/-1;
+      }
+    }
+
+    &--item {
+      font-size: 2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      transition: all 0.2s ease-in-out;
+      z-index: 1;
+
+      @media only screen and (max-width: 665px) {
+        font-size: 1.5rem;
+        justify-content: space-evenly;
+      }
+
+      &.active, &:hover {
+        color: var(--color--main-brand);
+        background-color: var(--color--light-shades);
+        transform: scale3d(1.1, 1.1, 1);
+
+        &:last-of-type {
+          transform: scale3d(1, 1.1, 1);
+        }
+      }
+    }
+  }
+}
+
+/*
+* Section Modules
+*/
+.modules {
+  margin-top: 2rem;
+  grid-column: 1/-1;
+
+  &__container {
+    list-style: none;
+    font-size: 2rem;
+    color: var(--color--dark-shades);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+
+    @media only screen and (max-width: 809px) {
+      grid-gap: 1rem;
+    }
+  }
+}
+
+.updates {
+
+}
+
+.billing {
+
+}
+
+/*
+* Section Footer
+*/
+.footer {
+  grid-column: 1/-1;
+  min-height: 4rem;
+  background-color: var(--color--main-brand);
+  text-align: center;
+  //box-shadow: var(--shadow--dark-up);
+}
